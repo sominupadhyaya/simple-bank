@@ -1,9 +1,19 @@
 const initialState = 0
 
-type Action =  {
-    type : string,
+interface DepositAction  {
+    type : "DEPOSIT"
     payload : number
 }
+
+interface WithdrawAction {
+    type: "WITHDRAW"
+    payload : number
+}
+
+interface BankruptAction {
+    type : "BANKRUPT"
+}
+type Action  = WithdrawAction | BankruptAction | DepositAction
 
 const bankReducer = (state:number = initialState , action: Action) =>{
     switch (action.type){
