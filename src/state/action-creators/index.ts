@@ -16,7 +16,7 @@ export const withdraw = (amount: number) => (dispatch: Dispatch<Action>) => {
   })
 }
 
-export const bankrupt = (amount: number) => (dispatch: Dispatch<Action>) => {
+export const bankrupt = () => (dispatch: Dispatch<Action>) => {
   dispatch({
     type: ActionType.BANKRUPT,
   })
