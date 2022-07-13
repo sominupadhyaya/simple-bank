@@ -21,3 +21,5 @@ export const bankrupt = () => (dispatch: Dispatch<Action>) => {
     type: ActionType.BANKRUPT,
   })
 }
+
+

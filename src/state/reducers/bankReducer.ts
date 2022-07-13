@@ -11,6 +11,8 @@ const bankReducer = (state:number = initialState, action: Action) =>{
         return state-action.payload
         case ActionType.BANKRUPT:
         return 0
+        default: 
+        return state
     }
 }
 

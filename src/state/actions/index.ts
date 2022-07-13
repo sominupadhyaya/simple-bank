@@ -12,6 +12,8 @@ interface WithdrawAction {
 interface BankruptAction {
   type: ActionType.BANKRUPT
 }
+
+
 export type Action = WithdrawAction | BankruptAction | DepositAction
 
 
