@@ -33,7 +33,7 @@ const  App = () => {
       }
       }}/>
 
-    <h1>{amount}</h1>
+    <h1>Balance : {amount}</h1>
     
     <button type="submit" onClick={() => deposit(deposits)}>Deposit</button>
     
