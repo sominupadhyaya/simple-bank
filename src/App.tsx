@@ -12,9 +12,10 @@ const  App = () => {
   
   const [withdraws, setWithdraws] = useState(0)
   const [deposits , setDeposits] = useState(0)
+
   return (
     <div className="App">
-      
+
       <label htmlFor="deposit">Enter the amount you want to deposit : </label>
       
       <input id="deposit" type="number" onChange={(e) =>setDeposits(parseInt(e.target.value))}/>
@@ -22,7 +23,7 @@ const  App = () => {
       <br />
       <label htmlFor="withdraw">Enter the amount you want to withdraw : </label>
       
-      <input type="number" id="withdraw" onChange={(e) => setWithdraws(parseInt((e.target.value))) }/>
+      <input type="number" id="withdraw" onChange={(e) => setWithdraws(parseInt((e.target.value )))}/>
 
     <h1>Balance : {amount}</h1>
     
