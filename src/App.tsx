@@ -17,21 +17,12 @@ const  App = () => {
       
       <label htmlFor="deposit">Enter the amount you want to deposit : </label>
       
-      <input id="deposit" type="text" onChange={(e) =>{
-      if (!isNaN(parseInt(e.target.value))) {
-          setDeposits(parseInt(e.target.value))
-      }
-      }}/>
-
-      <br /> <br />
-      
+      <input id="deposit" type="number" onChange={(e) =>setDeposits(parseInt(e.target.value))}/>
+      <br /> 
+      <br />
       <label htmlFor="withdraw">Enter the amount you want to withdraw : </label>
       
-      <input type="text" id="withdraw" onChange={(e) => {
-      if(!isNaN(parseInt(e.target.value))){
-         setWithdraws(parseInt((e.target.value))) 
-      }
-      }}/>
+      <input type="number" id="withdraw" onChange={(e) => setWithdraws(parseInt((e.target.value))) }/>
 
     <h1>Balance : {amount}</h1>
     
